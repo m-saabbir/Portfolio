@@ -462,7 +462,7 @@ img, iframe {
   }
 
   .portraitCard {
-    min-height: 540px;
+    min-height: auto;
   }
 }
 
@@ -495,6 +495,6 @@ img, iframe {
   }
 
   .portraitCard {
-    min-height: 540px;
+    min-height: auto;
   }
 }
