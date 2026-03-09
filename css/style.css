@@ -238,11 +238,7 @@ img, iframe {
 }
 
 .heroVisual {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 640px;
+  padding: 0px 30px;
 }
 
 .heroGlow {
@@ -256,21 +252,24 @@ img, iframe {
 .portraitCard {
   position: relative;
   width: min(100%, 540px);
-  background: rgba(255,255,255,0.72);
-  border-radius: 28px;
-  box-shadow: var(--shadow);
-  min-height: 540px;
-  overflow: hidden;
+  background: transparent;
+  border-radius: 100;
+  box-shadow: none;
+  min-height: auto;
+  overflow: visible;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .portraitCard img {
+  position: relative;
+  z-index: 2;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   object-position: center top;
+  filter: drop-shadow(-30px 30px 0px rgba(217, 172, 255, 0.5));
 }
 
 .section {
